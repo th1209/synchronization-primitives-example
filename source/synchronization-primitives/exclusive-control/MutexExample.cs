@@ -1,4 +1,4 @@
-namespace SynchronizationPrimitives.Mutex
+namespace SynchronizationPrimitives.ExclusiveControl.Mutex
 {
     public class MutexExample
     {

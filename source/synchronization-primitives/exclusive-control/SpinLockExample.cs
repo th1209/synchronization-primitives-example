@@ -1,9 +1,9 @@
-namespace SynchronizationPrimitives.Lock
+namespace SynchronizationPrimitives.ExclusiveControl.SpinLock
 {
-    public class LockExample
+    public class SpinLockExample
     {
         private int _counter = 0;
-        private object _lockObj = new object();
+        private System.Threading.SpinLock _spinLock = new System.Threading.SpinLock();
 
         public void Start()
         {
@@ -24,12 +24,20 @@ namespace SynchronizationPrimitives.Lock
 
         private void Increment()
         {
-            // 試しにlockブロックを外すと､合計値がおかしくなる
-            lock(_lockObj)
+            bool gotLock = false;
+            try
             {
+                _spinLock.Enter(ref gotLock);
                 for (int i = 0; i < 10000; i++)
                 {
                     _counter++;
+                }
+            }
+            finally
+            {
+                if (gotLock)
+                {
+                    _spinLock.Exit();
                 }
             }
         }

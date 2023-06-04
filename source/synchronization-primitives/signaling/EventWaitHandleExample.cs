@@ -1,6 +1,6 @@
 using System.Diagnostics;
 
-namespace SynchronizationPrimitives.WaitHandle
+namespace SynchronizationPrimitives.Signaling.WaitHandle
 {
     public class EventWaitHandleExample
     {

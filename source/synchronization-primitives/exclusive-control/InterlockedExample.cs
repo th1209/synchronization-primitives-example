@@ -1,4 +1,4 @@
-namespace SynchronizationPrimitives.InterLocked
+namespace SynchronizationPrimitives.ExclusiveControl.InterLocked
 {
     public class InterlockedExample
     {

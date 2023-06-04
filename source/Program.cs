@@ -1,39 +1,54 @@
-﻿using SynchronizationPrimitives.Semaphore;
-using SynchronizationPrimitives.Lock;
-using SynchronizationPrimitives.Mutex;
-using SynchronizationPrimitives.InterLocked;
-using SynchronizationPrimitives.RWLock;
-using SynchronizationPrimitives.SpinLock;
-using SynchronizationPrimitives.WaitHandle;
-using SynchronizationPrimitives.Monitor;
-using SynchronizationPrimitives.Barrier;
+﻿using SynchronizationPrimitives.ExclusiveControl.Semaphore;
+using SynchronizationPrimitives.ExclusiveControl.Lock;
+using SynchronizationPrimitives.ExclusiveControl.Mutex;
+using SynchronizationPrimitives.ExclusiveControl.InterLocked;
+using SynchronizationPrimitives.ExclusiveControl.RWLock;
+using SynchronizationPrimitives.ExclusiveControl.SpinLock;
+using SynchronizationPrimitives.Signaling.WaitHandle;
+using SynchronizationPrimitives.Signaling.Monitor;
+using SynchronizationPrimitives.Signaling.Barrier;
 
-new SemaphoreExample().Start();
+Main();
 
-// new SemaphoreSlimExample().Start();
+void Main()
+{
+    // 同期プリミティブに関するサンプル
+    {
+        new SemaphoreExample().Start();
 
-// new LockExample().Start();
+        // new SemaphoreSlimExample().Start();
 
-// new MutexExample().Start();
+        // new LockExample().Start();
 
-// new InterlockedExample().Start();
+        // new MutexExample().Start();
 
-// new ReaderWriterLockSlimExample().Start();
+        // new InterlockedExample().Start();
 
-// new SpinLockExample().Start();
+        // new ReaderWriterLockSlimExample().Start();
+
+        // new SpinLockExample().Start();
+    }
+
+    // シグナリングに関するサンプル
+    {
+        // new EventWaitHandleExample().Start();
+
+        // new AutoResetEventExample().Start();
+
+        // new ManualResetEventExample().Start();
+
+        // new ManualResetEventSlimExample().Start();
+
+        // new CountDownEventExample().Start();
+
+        // new MonitorExample().Start();
+
+        // new BarrierExample().Start();
+    }
+}
 
 
-// new EventWaitHandleExample().Start();
 
-// new AutoResetEventExample().Start();
 
-// new ManualResetEventExample().Start();
 
-// new ManualResetEventSlimExample().Start();
-
-// new CountDownEventExample().Start();
-
-// new MonitorExample().Start();
-
-// new BarrierExample().Start();
 

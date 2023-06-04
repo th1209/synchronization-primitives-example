@@ -1,6 +1,6 @@
 using System.Threading;
 
-namespace SynchronizationPrimitives.RWLock
+namespace SynchronizationPrimitives.ExclusiveControl.RWLock
 {
     public class ReaderWriterLockExample
     {

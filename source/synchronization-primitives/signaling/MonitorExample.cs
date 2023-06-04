@@ -1,4 +1,4 @@
-namespace SynchronizationPrimitives.Monitor;
+namespace SynchronizationPrimitives.Signaling.Monitor;
 
 public class MonitorExample
 {

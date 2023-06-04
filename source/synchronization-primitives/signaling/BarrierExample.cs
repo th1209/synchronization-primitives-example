@@ -1,4 +1,4 @@
-namespace SynchronizationPrimitives.Barrier
+namespace SynchronizationPrimitives.Signaling.Barrier
 {
     public class BarrierExample
     {

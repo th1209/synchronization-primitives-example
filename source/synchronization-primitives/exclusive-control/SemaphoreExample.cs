@@ -1,4 +1,4 @@
-namespace SynchronizationPrimitives.Semaphore
+namespace SynchronizationPrimitives.ExclusiveControl.Semaphore
 {
     public class SemaphoreExample
     {
